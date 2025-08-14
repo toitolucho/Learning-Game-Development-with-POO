@@ -47,3 +47,12 @@ La simulación debe usar **valores aleatorios** para que los resultados sean rea
 
 ## 📜 Representación Visual de la Moneda
 
+```text
+    $$$$              $$$$
+  $$    $$          $$    $$
+$$        $$      $$   \/   $$
+$$        $$      $$   /\   $$
+  $$    $$          $$    $$
+    $$$$              $$$$
+	Cara              Cruz
+     1                  0
