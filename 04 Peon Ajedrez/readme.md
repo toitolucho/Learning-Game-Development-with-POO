@@ -49,4 +49,8 @@ El peón puede avanzar hacia **arriba (U)** o hacia **abajo (D)**, y el cálculo
 ---
 
 ## Ejemplo de Ejecución
-
+```text
+Ingrese fila inicial: 2
+Ingrese columna: 1
+Ingrese dirección (U/D): U
+Celdas faltantes para coronación: 6
