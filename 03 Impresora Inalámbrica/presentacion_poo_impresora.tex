@@ -1,0 +1,353 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Idioma y codificación
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Colores y código
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{textcomp}
+
+\definecolor{codebg}{rgb}{0.96,0.96,0.96}
+\definecolor{codeframe}{rgb}{0.85,0.85,0.85}
+\definecolor{codedk}{rgb}{0.2,0.2,0.2}
+\definecolor{kw}{rgb}{0.15,0.15,0.6}
+\definecolor{str}{rgb}{0.5,0.1,0.1}
+
+\lstdefinestyle{cppstyle}{
+  language=C++,
+  basicstyle=\ttfamily\small\color{codedk},
+  keywordstyle=\bfseries\color{kw},
+  stringstyle=\color{str},
+  commentstyle=\itshape\color{gray},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=8pt,
+  frame=single,
+  rulecolor=\color{codeframe},
+  frameround=tttt,
+  backgroundcolor=\color{codebg},
+  tabsize=2,
+  breaklines=true,
+  columns=fullflexible
+}
+
+% Tema Beamer
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% Metadatos
+\title[POO e Impresora Inalámbrica]{Programación Orientada a Objetos (POO) aplicada a una Impresora Inalámbrica}
+\author{Tu Nombre}
+\institute{COM200}
+\date{\\\small Requisito: Simulación de impresora con batería y tinta}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Agenda}
+  \tableofcontents
+\end{frame}
+
+\section{Qué es POO}
+
+\begin{frame}{Qué es Programación Orientada a Objetos}
+  \begin{itemize}
+    \item \textbf{POO}: paradigma que modela el software como una colección de \textbf{objetos} que colaboran.
+    \item Cada objeto pertenece a una \textbf{clase} que define su estructura (\textbf{atributos}) y comportamiento (\textbf{métodos}).
+    \item Beneficios: \textbf{encapsulamiento}, \textbf{abstracción}, \textbf{reutilización}, \textbf{mantenibilidad}.
+  \end{itemize}
+\end{frame}
+
+\section{Bloques fundamentales}
+
+\begin{frame}{Clases y Objetos}
+  \begin{block}{Clase}
+    Plantilla/definición que describe qué datos (atributos) y qué operaciones (métodos) poseen los objetos del mismo tipo.
+  \end{block}
+  \begin{block}{Objeto}
+    Instancia concreta de una clase con un \textbf{estado} propio y un \textbf{comportamiento} definido por su clase.
+  \end{block}
+  \vspace{4pt}
+  \textbf{Ejemplo conceptual:} La clase \texttt{Impresora} describe una impresora; el objeto \texttt{miImpresora} es una impresora específica con su nivel de tinta, batería y hojas.
+\end{frame}
+
+\begin{frame}{Atributos, Métodos y Encapsulamiento}
+  \begin{itemize}
+    \item \textbf{Atributos}: datos que representan el estado (p.ej., \texttt{tinta}, \texttt{batería}, \texttt{hojasBandeja}).
+    \item \textbf{Métodos}: operaciones que modifican/consultan el estado (p.ej., \texttt{imprimir()}, \texttt{recargarTinta()}, \texttt{puedeImprimir()}).
+    \item \textbf{Encapsulamiento}: ocultar los detalles internos y exponer una interfaz segura (visibilidad \texttt{private}/\texttt{public}).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Constructores e Invariantes}
+  \begin{itemize}
+    \item \textbf{Constructor}: método especial para inicializar objetos con un estado válido.
+    \item \textbf{Invariante de clase}: condiciones que siempre deben cumplirse (p.ej., recursos no negativos).
+    \item Validar en el constructor y en los métodos que modifiquen el estado.
+  \end{itemize}
+\end{frame}
+
+\section{Métodos: con y sin retorno}
+
+\begin{frame}{Métodos que devuelven valores}
+  \begin{itemize}
+    \item Responden preguntas sin cambiar el estado (idealmente): \textbf{consultas}.
+    \item Devuelven un valor: p.ej., \texttt{double calcularTintaNecesaria(int hojas)}.
+    \item Facilitan separar \textbf{cálculo} de \textbf{efecto}, mejorando testeo y claridad.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Métodos sin retorno (procedimientos)}
+  \begin{itemize}
+    \item Ejecutan acciones con \textbf{efecto} sobre el estado: p.ej., \texttt{void imprimir(int hojas)}.
+    \item Deben validar precondiciones y mantener invariantes (no permitir negativos).
+    \item Pueden lanzar excepciones si no se cumplen las condiciones.
+  \end{itemize}
+\end{frame}
+
+\section{Del requisito al diseño}
+
+\begin{frame}{Resumen del requisito (Impresora inalámbrica)}
+  \begin{itemize}
+    \item Insumos: tinta negra, batería, hojas en bandeja.
+    \item Parámetros: consumo de tinta por palabra (\(x\)), consumo de energía por hoja (\(t\)), palabras por hoja, hojas del documento.
+    \item Reglas: validar recursos suficientes; imprimir hoja a hoja; detenerse y notificar si algo se agota; no permitir valores negativos.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Identificación de atributos y operaciones}
+  \textbf{Atributos (estado):}
+  \begin{itemize}
+    \item \texttt{consumoTintaPorPalabra: double}
+    \item \texttt{consumoEnergiaPorHoja: double}
+    \item \texttt{palabrasPorHoja: int}
+    \item \texttt{tinta: double}, \texttt{bateria: double}
+    \item \texttt{hojasBandeja: int}
+  \end{itemize}
+  \vspace{6pt}
+  \textbf{Métodos (comportamiento):}
+  \begin{itemize}
+    \item Consultas: \texttt{calcularPalabrasTotales(hojas)}, \texttt{calcularTintaNecesaria(hojas)}, \texttt{calcularEnergiaNecesaria(hojas)}, \texttt{puedeImprimir(hojas)}.
+    \item Acciones: \texttt{imprimir(hojas)}, \texttt{recargarTinta(x)}, \texttt{recargarBateria(x)}, \texttt{reponerHojas(n)}.
+  \end{itemize}
+\end{frame}
+
+\section{Diseño e implementación}
+
+\begin{frame}[fragile]{Diseño de la clase \texttt{Impresora} (C++) — Estructura}
+\lstset{style=cppstyle}
+\begin{lstlisting}
+#include <stdexcept>
+#include <string>
+
+class Impresora {
+  private:
+    double consumoTintaPorPalabra;
+    double consumoEnergiaPorHoja;
+    int palabrasPorHoja;
+    double tinta;
+    double bateria;
+    int hojasBandeja;
+
+    void validarNoNegativo(double valor, const std::string& nombre) const {
+      if (valor < 0) throw std::invalid_argument(nombre + " no puede ser negativo");
+    }
+
+  public:
+    Impresora(double consumoTintaPorPalabra,
+              double consumoEnergiaPorHoja,
+              int palabrasPorHoja,
+              double tintaInicial,
+              double bateriaInicial,
+              int hojasIniciales)
+      : consumoTintaPorPalabra(consumoTintaPorPalabra),
+        consumoEnergiaPorHoja(consumoEnergiaPorHoja),
+        palabrasPorHoja(palabrasPorHoja),
+        tinta(tintaInicial),
+        bateria(bateriaInicial),
+        hojasBandeja(hojasIniciales) {
+      validarNoNegativo(consumoTintaPorPalabra, "consumoTintaPorPalabra");
+      validarNoNegativo(consumoEnergiaPorHoja, "consumoEnergiaPorHoja");
+      if (palabrasPorHoja <= 0) throw std::invalid_argument("palabrasPorHoja > 0");
+      validarNoNegativo(tintaInicial, "tintaInicial");
+      validarNoNegativo(bateriaInicial, "bateriaInicial");
+      if (hojasIniciales < 0) throw std::invalid_argument("hojasIniciales >= 0");
+    }
+
+    // Consultas (const):
+    int calcularPalabrasTotales(int hojasDocumento) const {
+      if (hojasDocumento < 0) throw std::invalid_argument("hojasDocumento >= 0");
+      return hojasDocumento * palabrasPorHoja;
+    }
+
+    double calcularTintaNecesaria(int hojasDocumento) const {
+      return calcularPalabrasTotales(hojasDocumento) * consumoTintaPorPalabra;
+    }
+
+    double calcularEnergiaNecesaria(int hojasDocumento) const {
+      if (hojasDocumento < 0) throw std::invalid_argument("hojasDocumento >= 0");
+      return hojasDocumento * consumoEnergiaPorHoja;
+    }
+
+    bool puedeImprimir(int hojasDocumento) const {
+      return hojasDocumento <= hojasBandeja
+          && calcularTintaNecesaria(hojasDocumento) <= tinta
+          && calcularEnergiaNecesaria(hojasDocumento) <= bateria;
+    }
+
+    // Comandos (efecto):
+    void imprimir(int hojasDocumento) {
+      if (!puedeImprimir(hojasDocumento)) {
+        throw std::logic_error("Recursos insuficientes para imprimir");
+      }
+      for (int i = 0; i < hojasDocumento; ++i) {
+        tinta -= consumoTintaPorPalabra * palabrasPorHoja;
+        bateria -= consumoEnergiaPorHoja;
+        --hojasBandeja;
+      }
+    }
+
+    void recargarTinta(double unidades) {
+      validarNoNegativo(unidades, "unidades tinta");
+      tinta += unidades;
+    }
+
+    void recargarBateria(double unidades) {
+      validarNoNegativo(unidades, "unidades batería");
+      bateria += unidades;
+    }
+
+    void reponerHojas(int cantidad) {
+      if (cantidad < 0) throw std::invalid_argument("cantidad >= 0");
+      hojasBandeja += cantidad;
+    }
+};
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Consultas en C++: separar cálculo de efecto}
+\lstset{style=cppstyle}
+\begin{lstlisting}
+// Dentro de la clase Impresora (métodos const):
+int calcularPalabrasTotales(int hojasDocumento) const {
+  if (hojasDocumento < 0) throw std::invalid_argument("hojasDocumento >= 0");
+  return hojasDocumento * palabrasPorHoja;
+}
+
+double calcularTintaNecesaria(int hojasDocumento) const {
+  return calcularPalabrasTotales(hojasDocumento) * consumoTintaPorPalabra;
+}
+
+double calcularEnergiaNecesaria(int hojasDocumento) const {
+  if (hojasDocumento < 0) throw std::invalid_argument("hojasDocumento >= 0");
+  return hojasDocumento * consumoEnergiaPorHoja;
+}
+
+bool puedeImprimir(int hojasDocumento) const {
+  return hojasDocumento <= hojasBandeja
+      && calcularTintaNecesaria(hojasDocumento) <= tinta
+      && calcularEnergiaNecesaria(hojasDocumento) <= bateria;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Comandos en C++: efectos e invariantes}
+\lstset{style=cppstyle}
+\begin{lstlisting}
+// Dentro de la clase Impresora:
+void imprimir(int hojasDocumento) {
+  if (!puedeImprimir(hojasDocumento)) {
+    throw std::logic_error("Recursos insuficientes para imprimir");
+  }
+  for (int i = 0; i < hojasDocumento; ++i) {
+    tinta -= consumoTintaPorPalabra * palabrasPorHoja;
+    bateria -= consumoEnergiaPorHoja;
+    --hojasBandeja;
+  }
+}
+
+void recargarTinta(double unidades) {
+  validarNoNegativo(unidades, "unidades tinta");
+  tinta += unidades;
+}
+
+void recargarBateria(double unidades) {
+  validarNoNegativo(unidades, "unidades batería");
+  bateria += unidades;
+}
+
+void reponerHojas(int cantidad) {
+  if (cantidad < 0) throw std::invalid_argument("cantidad >= 0");
+  hojasBandeja += cantidad;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Uso en C++: instanciación y operaciones}
+\lstset{style=cppstyle}
+\begin{lstlisting}
+#include <iostream>
+
+int main() {
+  try {
+    Impresora imp(
+      0.5,   // consumo de tinta por palabra
+      2.0,   // consumo de energía por hoja
+      100,   // palabras por hoja
+      300.0, // tinta inicial
+      20.0,  // batería inicial
+      10     // hojas en bandeja
+    );
+
+    int hojasDoc = 5;
+    if (imp.puedeImprimir(hojasDoc)) {
+      imp.imprimir(hojasDoc); // comando (efecto)
+    } else {
+      std::cout << "Faltan recursos para imprimir\n";
+    }
+  } catch (const std::exception& ex) {
+    std::cerr << "Error: " << ex.what() << "\n";
+  }
+  return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\section{Buenas prácticas y extensiones}
+
+\begin{frame}{Buenas prácticas aplicadas}
+  \begin{itemize}
+    \item Encapsular atributos como \texttt{private} y exponer sólo lo necesario.
+    \item Validar entradas y mantener invariantes en constructor y métodos.
+    \item Separar \textbf{consultas} (devuelven valores, sin efectos) de \textbf{comandos} (efectos, sin retorno).
+    \item Nombrar claramente parámetros y métodos; evitar abreviaturas crípticas.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Posibles extensiones}
+  \begin{itemize}
+    \item Métrica de \textit{nivel mínimo} de recursos y alertas preventivas.
+    \item Soporte de distintos modos de ahorro (variar \texttt{palabrasPorHoja}).
+    \item Registro de historial de impresiones (otra clase \texttt{TrabajoImpresion}).
+    \item Pruebas unitarias de consultas y comandos por separado.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Cierre}
+  \begin{itemize}
+    \item POO ayuda a mapear \textbf{conceptos del dominio} a \textbf{código} de forma clara y mantenible.
+    \item La clase \texttt{Impresora} encapsula reglas del problema y valida recursos.
+    \item Distinguir entre métodos con retorno (cálculo) y sin retorno (acción) mejora el diseño y las pruebas.
+  \end{itemize}
+\end{frame}
+
+\end{document}
