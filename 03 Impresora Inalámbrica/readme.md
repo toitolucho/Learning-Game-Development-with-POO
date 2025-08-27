@@ -20,6 +20,7 @@ Al inicio del programa, el usuario debe ingresar:
 - **Consumo de tinta por palabra** (`x` unidades).
 - **Cantidad promedio de palabras por hoja**.
 - **Cantidad de hojas del documento**.
+- **Texto Documento**
 
 ### Estado Inicial de la Impresora
 - **Nivel de tinta actual**.
