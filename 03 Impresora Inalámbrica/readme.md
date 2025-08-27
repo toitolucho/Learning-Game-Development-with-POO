@@ -15,17 +15,18 @@ El objetivo es practicar conceptos básicos de **Programación Orientada a Objet
 
 ## 🛠️ Requisitos de Funcionamiento
 
-### Parámetros Configurables
+### Parámetros Configurables (Documento)
 Al inicio del programa, el usuario debe ingresar:
 - **Consumo de tinta por palabra** (`x` unidades).
-- **Consumo de energía por hoja** (`t` unidades).
 - **Cantidad promedio de palabras por hoja**.
 - **Cantidad de hojas del documento**.
+- **Texto Documento**
 
 ### Estado Inicial de la Impresora
 - **Nivel de tinta actual**.
 - **Nivel de energía de la batería**.
 - **Número de hojas disponibles en la bandeja**.
+- - **Consumo de energía por hoja** (`t` unidades). (Configurable en el constructor)
 
 ---
 
