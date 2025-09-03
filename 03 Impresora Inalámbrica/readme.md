@@ -1,6 +1,7 @@
 # 🖨️ Simulación de una Impresora Inalámbrica con Batería
 
-Este proyecto consiste en desarrollar un programa que simule el funcionamiento de una **impresora inalámbrica** que funciona con batería y tinta negra.  
+Este proyecto consiste en desarrollar un programa que simule el funcionamiento de una **impresora inalámbrica** que funciona con batería y tinta negra. 
+Es un proyecto para aprender los conceptos de POO.
 El objetivo es practicar conceptos básicos de **Programación Orientada a Objetos (POO)** como **clases**, **constructores**, **métodos** y **encapsulamiento**, sin necesidad de listas o estructuras de datos complejas.
 
 ---
