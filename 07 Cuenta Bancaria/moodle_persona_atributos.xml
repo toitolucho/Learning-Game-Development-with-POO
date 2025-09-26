@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="cloze">
+    <name>
+      <text>POO: Definición de atributos en la clase Persona</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p><b>Anuncio:</b> En la definición de la clase <b>Persona</b>, es importante describir el orden de los atributos y su tipo para evitar malentendidos. <br><b>Debe respetar exactamente el siguiente orden y formato:</b><br><b>int ci;</b><br><b>std::string codigoProcedencia;</b><br><b>std::string nombres;</b><br><b>std::string apellidos;</b><br>Indique el tipo y el nombre de cada atributo en el mismo orden en que aparecen en el enunciado.</p>
+        <p>
+          Considere la siguiente declaración de atributos para la clase <b>Persona</b> en C++:<br>
+          {1:SHORTANSWER:=int} {1:SHORTANSWER:=ci};<br>
+          {1:SHORTANSWER:=std::string} {1:SHORTANSWER:=codigoProcedencia};<br>
+          {1:SHORTANSWER:=std::string} {1:SHORTANSWER:=nombres};<br>
+          {1:SHORTANSWER:=std::string} {1:SHORTANSWER:=apellidos};<br>
+        </p>
+        <p>
+          Complete los espacios con el tipo y nombre de los atributos según el enunciado:<br>
+          - Número de Cédula de Identidad (ci) <br>
+          - Código de Procedencia (codigoProcedencia) <br>
+          - Nombres (nombres) <br>
+          - Apellidos (apellidos)
+        </p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>Recuerde que el orden y el tipo de los atributos deben coincidir con el enunciado: <br>
+        <b>int ci;</b><br>
+        <b>std::string codigoProcedencia;</b><br>
+        <b>std::string nombres;</b><br>
+        <b>std::string apellidos;</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+</quiz>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="cloze">
+    <name>
+      <text>POO: Selección de modificador y atributos en la clase Persona</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p><b>Anuncio:</b> En la definición de la clase <b>Persona</b>, seleccione el <b>modificador de acceso</b>, <b>tipo</b> y <b>nombre</b> de cada atributo en el orden correcto según el enunciado.</p>
+        <p>
+          Complete la declaración de atributos para la clase <b>Persona</b> en C++:<br>
+          {1:MULTICHOICE:=private~public~protected}:
+          {1:MULTICHOICE:=int~std::string~float~bool} {1:MULTICHOICE:=ci~codigoProcedencia~nombres~apellidos};<br>
+          {1:MULTICHOICE:=private~public~protected}:
+          {1:MULTICHOICE:=std::string~int~float~bool} {1:MULTICHOICE:=codigoProcedencia~ci~nombres~apellidos};<br>
+          {1:MULTICHOICE:=private~public~protected}:
+          {1:MULTICHOICE:=std::string~int~float~bool} {1:MULTICHOICE:=nombres~ci~codigoProcedencia~apellidos};<br>
+          {1:MULTICHOICE:=private~public~protected}:
+          {1:MULTICHOICE:=std::string~int~float~bool} {1:MULTICHOICE:=apellidos~ci~codigoProcedencia~nombres};<br>
+        </p>
+        <p>
+          Opciones para modificador: <b>private</b>, <b>public</b>, <b>protected</b><br>
+          Opciones para tipo: <b>int</b>, <b>std::string</b>, <b>float</b>, <b>bool</b><br>
+          Opciones para nombre: <b>ci</b>, <b>codigoProcedencia</b>, <b>nombres</b>, <b>apellidos</b>
+        </p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La declaración correcta es:<br>
+        <b>private:</b> <b>int ci;</b><br>
+        <b>private:</b> <b>std::string codigoProcedencia;</b><br>
+        <b>private:</b> <b>std::string nombres;</b><br>
+        <b>private:</b> <b>std::string apellidos;</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>8.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+  </question>
+</quiz>

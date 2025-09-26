@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <name>
+      <text>POO: Getter y Setter para un atributo de Persona</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Arrastre y suelte la definición correcta del método <b>getter</b> y <b>setter</b> para el atributo <b>ci</b> de la clase <b>Persona</b>.</p>
+        <p>Coloque cada bloque de código en el espacio correspondiente:</p>
+        <pre>[[1]]<br />[[2]]</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>int getCi() const { return ci; }</b><br>
+        <b>void setCi(int _ci) { ci = _ci; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox>
+      <text>int getCi() const { return ci; }</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>void setCi(int _ci) { ci = _ci; }</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Dummy alternatives -->
+    <dragbox>
+      <text>int setCi() { return ci; }</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>void getCi(int _ci) { ci = _ci; }</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

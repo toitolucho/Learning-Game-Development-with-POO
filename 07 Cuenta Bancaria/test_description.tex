@@ -1,0 +1,206 @@
+\documentclass[8pt]{article}
+\usepackage[legalpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textbf{Examen de Programación Orientada a Objetos}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\begin{multicols}{2}
+
+\textbf{DATOS DEL ESTUDIANTE}\\
+Nombre Completo: \rule{4cm}{0.5pt}\\
+Carrera: \rule{4cm}{0.5pt}\\[2pt]
+
+\textbf{DESCRIPCIÓN DEL EXAMEN}
+
+\textbf{Clase Persona}
+
+Se desea diseñar la clase Persona que tendrá las siguientes características:
+
+\textbf{Atributos:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Ci: entero
+    \item CodigoProcedencia: cadena con dos caracteres [Pt, Or, Co, Ta, Ch, LP, SC, Be, Pa]
+    \item Nombres: Cadena
+    \item Apellidos: Cadena
+\end{itemize}
+
+\textbf{Comportamiento:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item ObtenerNombreCompleto(): Cadena
+    \item VerDatos()
+    \item ObtenerProcedencia(): Cadena
+\end{itemize}
+
+\textbf{Clase Estudiante (Herencia)}
+
+\textbf{Atributos:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Cu: cadena (Carnet universitario)
+    \item Carrera: cadena
+\end{itemize}
+
+\textbf{Comportamiento:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item VerDatos() (sobrescrito)
+    \item EsCompañeroDe(Estudiante): bool
+\end{itemize}
+
+\textbf{Clase Cuenta}
+
+\textbf{Atributos:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Nro Cuenta: Entero
+    \item Saldo Actual: Real
+    \item Propietario: Persona
+\end{itemize}
+
+\textbf{Comportamiento:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Depositar(monto: real)
+    \item Retirar(monto: real)
+    \item Transferir(Cuenta)
+    \item TransferirPromocion(Cuenta, PorcentajeIncremento)
+\end{itemize}
+
+\textbf{CRITERIOS DE EVALUACIÓN}
+
+\textbf{Definición de la Clase Persona (30\%)}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Declaración de atributos y modificadores de acceso: 5pts
+    \item Métodos de acceso y mutación: 5pts
+    \item Dos constructores (por defecto y con parámetros): 5pts
+    \item Método ObtenerNombreCompleto(): 5pts
+    \item Método VerDatos(): 5pts
+    \item Método ObtenerProcedencia(): 5pts
+\end{itemize}
+
+\textbf{Definición de la Clase Estudiante (20\%)}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Aplicación de herencia: 5pts
+    \item Sobreescritura del constructor por defecto: 7pts
+    \item Sobreescritura del método VerDatos: 8pts
+\end{itemize}
+
+\textbf{Definición de la Clase Cuenta (50\%)}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Atributos correctamente encapsulados: 10pts
+    \item Métodos de depósito y retiro: 10pts
+    \item Método Transferir(): 15pts
+    \item Método TransferirPromocion(): 15pts
+\end{itemize}
+
+\textbf{NOTAS IMPORTANTES:}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Transferir() verifica si ambos estudiantes son compañeros de carrera
+    \item TransferirPromocion() verifica si están en la misma región (Altiplano, Valles o Llanos)
+    \item Imprimir mensajes informativos usando el nombre completo en las transferencias
+    \item Códigos de procedencia: Pt=Potosí, Or=Oruro, Co=Cochabamba, Ta=Tarija, Ch=Chuquisaca, LP=La Paz, SC=Santa Cruz, Be=Beni, Pa=Pando
+\end{itemize}
+
+\columnbreak
+
+\textbf{DATOS DEL ESTUDIANTE}\\
+Nombre Completo: \rule{4cm}{0.5pt}\\
+Carrera: \rule{4cm}{0.5pt}\\[2pt]
+
+\textbf{DESCRIPCIÓN DEL EXAMEN}
+
+\textbf{Clase Persona}
+
+Se desea diseñar la clase Persona que tendrá las siguientes características:
+
+\textbf{Atributos:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Ci: entero
+    \item CodigoProcedencia: cadena con dos caracteres [Pt, Or, Co, Ta, Ch, LP, SC, Be, Pa]
+    \item Nombres: Cadena
+    \item Apellidos: Cadena
+\end{itemize}
+
+\textbf{Comportamiento:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item ObtenerNombreCompleto(): Cadena
+    \item VerDatos()
+    \item ObtenerProcedencia(): Cadena
+\end{itemize}
+
+\textbf{Clase Estudiante (Herencia)}
+
+\textbf{Atributos:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Cu: cadena (Carnet universitario)
+    \item Carrera: cadena
+\end{itemize}
+
+\textbf{Comportamiento:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item VerDatos() (sobrescrito)
+    \item EsCompañeroDe(Estudiante): bool
+\end{itemize}
+
+\textbf{Clase Cuenta}
+
+\textbf{Atributos:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Nro Cuenta: Entero
+    \item Saldo Actual: Real
+    \item Propietario: Persona
+\end{itemize}
+
+\textbf{Comportamiento:}
+\begin{itemize}[leftmargin=10pt, itemsep=0pt]
+    \item Depositar(monto: real)
+    \item Retirar(monto: real)
+    \item Transferir(Cuenta)
+    \item TransferirPromocion(Cuenta, PorcentajeIncremento)
+\end{itemize}
+
+\textbf{CRITERIOS DE EVALUACIÓN}
+
+\textbf{Definición de la Clase Persona (30\%)}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Declaración de atributos y modificadores de acceso: 5pts
+    \item Métodos de acceso y mutación: 5pts
+    \item Dos constructores (por defecto y con parámetros): 5pts
+    \item Método ObtenerNombreCompleto(): 5pts
+    \item Método VerDatos(): 5pts
+    \item Método ObtenerProcedencia(): 5pts
+\end{itemize}
+
+\textbf{Definición de la Clase Estudiante (20\%)}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Aplicación de herencia: 5pts
+    \item Sobreescritura del constructor por defecto: 7pts
+    \item Sobreescritura del método VerDatos: 8pts
+\end{itemize}
+
+\textbf{Definición de la Clase Cuenta (50\%)}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Atributos correctamente encapsulados: 10pts
+    \item Métodos de depósito y retiro: 10pts
+    \item Método Transferir(): 15pts
+    \item Método TransferirPromocion(): 15pts
+\end{itemize}
+
+\textbf{NOTAS IMPORTANTES:}
+\begin{itemize}[leftmargin=12pt, itemsep=0pt]
+    \item Transferir() verifica si ambos estudiantes son compañeros de carrera
+    \item TransferirPromocion() verifica si están en la misma región (Altiplano, Valles o Llanos)
+    \item Imprimir mensajes informativos usando el nombre completo en las transferencias
+    \item Códigos de procedencia: Pt=Potosí, Or=Oruro, Co=Cochabamba, Ta=Tarija, Ch=Chuquisaca, LP=La Paz, SC=Santa Cruz, Be=Beni, Pa=Pando
+\end{itemize}
+
+\end{multicols}
+
+\end{document}

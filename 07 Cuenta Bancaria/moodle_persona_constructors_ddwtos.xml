@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <name>
+      <text>POO: Constructores de la clase Persona</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Arrastre y suelte cada línea en el lugar correcto para completar la definición de los dos constructores de la clase <b>Persona</b>: uno por defecto y otro que reciba todos los atributos.</p>
+        <p><b>Constructor por defecto:</b></p>
+        <pre>[[1]]
+[[2]]
+[[3]]
+[[4]]</pre>
+        <p><b>Constructor con parámetros:</b></p>
+        <pre>[[5]]
+[[6]]
+[[7]]
+[[8]]</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>Persona() :</b><br>
+        <b>  ci(0), codigoProcedencia(""), nombres(""), apellidos("") {}</b><br>
+        <b>Persona(int _ci, std::string _codigo, std::string _nombres, std::string _apellidos) :</b><br>
+        <b>  ci(_ci), codigoProcedencia(_codigo), nombres(_nombres), apellidos(_apellidos) {}</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>6</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Correct lines for default constructor -->
+    <dragbox>
+      <text>Persona()</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>{</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>    ci = 0;
+    codigoProcedencia = "";
+    nombres = "";
+    apellidos = "";</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>}</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Correct lines for parameterized constructor -->
+    <dragbox>
+      <text>Persona(int _ci, std::string _codigo, std::string _nombres, std::string _apellidos)</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>{</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>    ci = _ci;
+    codigoProcedencia = _codigo;
+    nombres = _nombres;
+    apellidos = _apellidos;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>}</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Dummy alternatives -->
+    <dragbox>
+      <text>Persona(std::string nombre, int ci)</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>    nombres = nombre;
+    ci = ci;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona()</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona(int ci)</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>    ci = ci;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona(std::string nombres)</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>    nombres = nombres;</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Dummy alternatives -->
+    <dragbox>
+      <text>Persona(std::string nombre, int ci) :</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>  nombres(nombre), ci(ci) {}</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona() {}</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona(int ci) :</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>  ci(ci) {}</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona(std::string nombres) :</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>  nombres(nombres) {}</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

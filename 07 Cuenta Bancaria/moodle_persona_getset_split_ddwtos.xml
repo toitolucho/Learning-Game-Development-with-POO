@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <name>
+      <text>POO: Partes del método getter en Persona</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Arrastre y suelte cada parte de la definición del método <b>getter</b> para el atributo <b>ci</b> de la clase <b>Persona</b>.</p>
+        <p>Complete la siguiente línea de código:</p>
+        <pre>[[1]] [[2]] [[3]] [[4]]</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La definición correcta es:<br>
+        <b>int getCi() const { return ci; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>4</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox>
+      <text>int</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>getCi() const</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>{</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>return ci; }</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

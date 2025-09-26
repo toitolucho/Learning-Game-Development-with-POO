@@ -1,0 +1,52 @@
+Se desea Diseñar la clase Persona que tendra la siguientes caracteristicas
+Atributos
+- Ci : entero
+- CodigoProcedencia : cadena con dos caracteres [Pt, Or, Co, Ta, Ch, LP, SC, Be, Pa] (La lista representa cada departamento del Pais)
++ Nombres : Cadena
++ Apellidos : Cadena
+Comportamiento
++ ObtenerNombreCompleto(): Cadena -> Concatena los nombres y apellidos con un espacio y devuelve una cadena
++ VerDatos() -> imprime los datos de la clase
+ObtenerProcedencia:Cadena -> Determinar a partir del Codigo de Procedencia el departamento al que corresponde
+
+Implemente Herencia para crear la clase Estudiante con las siguientes caracteristicas
+Atributos
+
+- Cu: cadena -> Carnet universitario
+- Carrera : cadena -> carrera que estudia por ejemplo : Sistemas, Diseño, Telecomunicaciones, TI, CienciasComputacion
+Comportamiento:
++ VerDatos() -> Sobre escriba el metodo de la clase padre e incopore los datos adicionales de la clase hija
++ EsCompañeroDe(Estudiante):bool -> determina si es compañero del estudiante recibido como parametros, considerando que ambos deben estar en la misma carrera.
+
+Se desea diseñar la clase Cuenta que tendra los siguientes caracteristicas 
+- Nro Cuenta: Entero ( Representa el identificador de una Cuenta)
+- Saldo Actual : Real (Saldo actual en la cuenta vigente)
+- Propietario : Persona
+
+Comportamiento
++ Depositar(monto:real) -> incrementa el saldo actual de la cuenta
++ Retirar(monto:real) -> realiza el retiro del monto considerando el saldo actual en caso de que sea posible
+- Transferir(Cuenta) -> Se realizara una transferencia a la cuenta, siempre y cuando la cuenta corresponda a un estudiante que es compañero de la cuenta a la cual se desea compartir (Debe utilizar los metodos definidos en la clase cuenta y adicionalmente la funcion en forma de pregunta para determiar si son compañeros)
+Debe imprimir adicionalmente un mensaje utilizando el nombre completo que indique: 
+Se transfirio [monto] de la cuenta de : [nombre Completo] a la cuenta de [nombre Completo]
+- TransferirPromocion(Cuenta, PorcentajeIncremento) -> Se realizara una transferencia a la cuenta, siempre y cuando la cuenta corresponda a una persona que esta en la misma region (Altiplano, Valles o LLanos). En ese sentido se le incrementara un PorcentajeIncremento a ambas cuentas por la Promocion del Banco
+
+Formato de Evaluacion
+Definicion de la Clase Persona 30%
+	Declaracion de Atributos acordes a su modificador de acceso 5pts
+	Implementacion de metodos de acceso y mutacion para los respectivos atributos que lo requieran 5 pts
+	Declaracion de 2 constructores: uno por defecto y otro que reciba todos los atributos 5pts
+	Definicion del metodo ObtenerNombreCompleto() 5pts
+	Definicion del metodo VerDatos() 5pts
+	Definicion del metodo ObtenerProcedencia() 5pts
+
+Definicion de la Clase Estudiante 20%
+	Aplicacion de Herencia  5pts
+	SobreEscritura del Constructor por Defecto 7 pts
+	SobreEscritura del metodo VerDatos 8pts
+
+Definicion de la Clase Cuenta 50%
+	Definicion de los atributos correctamente encapsulados 10pts
+	Implementacion de los metodos de Deposito y Retiro  10 pts
+	Implementacion del metodo Transferir()  15 pts
+	Implementacion del metodo TransferirPromocion() 15 pts

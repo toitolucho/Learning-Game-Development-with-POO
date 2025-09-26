@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <name>
+      <text>POO: Declaración de atributos en la clase Persona</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Considere la definición de la clase <b>Persona</b> en C++. Arrastre y suelte la declaración de atributo correcta en cada espacio, respetando el modificador de acceso.<br><b>El orden de arrastrado debe ser:</b> ci, codigoProcedencia, nombres, apellidos.</p>
+        <p>
+        public:<br />
+        [[1]]<br />
+        [[2]]<br />
+        [[3]]<br />
+        [[4]]<br />
+        </p>
+        <p>
+        <strong>Opciones:</strong>
+        </p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>Recuerde que el orden y el tipo de los atributos deben coincidir exactamente con el enunciado. Debe respetar el siguiente orden y formato:<br>
+        <b>private: int ci;</b><br>
+        <b>private: std::string codigoProcedencia;</b><br>
+        <b>private: std::string nombres;</b><br>
+        <b>private: std::string apellidos;</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>4</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox>
+      <text>private: int ci;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>private: std::string codigoProcedencia;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>private: std::string nombres;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>private: std::string apellidos;</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Distractors -->
+    <dragbox>
+      <text>public: int edad;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>protected: float peso;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>private: bool activo;</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

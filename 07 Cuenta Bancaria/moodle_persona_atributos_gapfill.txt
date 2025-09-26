@@ -1,0 +1,10 @@
+::POO: Declaración de atributos en la clase Persona (Gapfill)::
+public:
+// Complete la declaración de atributos seleccionando la opción correcta para cada línea. Elija la opción exacta (tipo y nombre juntos) según el enunciado.
+
+[[private: int ci;|private: std::string codigoProcedencia;|private: std::string nombres;|private: std::string apellidos;|public: int edad;|protected: float peso;]]
+[[private: int ci;|private: std::string codigoProcedencia;|private: std::string nombres;|private: std::string apellidos;|public: int edad;|protected: float peso;]]
+[[private: int ci;|private: std::string codigoProcedencia;|private: std::string nombres;|private: std::string apellidos;|public: int edad;|protected: float peso;]]
+[[private: int ci;|private: std::string codigoProcedencia;|private: std::string nombres;|private: std::string apellidos;|public: int edad;|protected: float peso;]]
+
+// Opciones distractoras incluidas para mayor reto.

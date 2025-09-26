@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <name>
+      <text>POO: Métodos de acceso y mutación en Persona</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Implementación de métodos de acceso y mutación para los respectivos atributos que lo requieran (5 pts)</p>
+        <p>Arrastre y suelte la definición correcta de método <b>getter</b> o <b>setter</b> en el espacio correspondiente para la clase <b>Persona</b>. Cada opción es un bloque de código completo.<br><b>El orden de arrastrado debe ser:</b> getCi, setCi, getNombres, setNombres.</p>
+        <p>
+        [[1]]<br />
+        [[2]]<br />
+        [[3]]<br />
+        [[4]]<br />
+        </p>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>Recuerde que los métodos de acceso (getters) y mutación (setters) deben estar correctamente definidos y asociados a los atributos de la clase. Ejemplo:<br>
+        <b>int getCi() const { return ci; }</b><br>
+        <b>void setCi(int _ci) { ci = _ci; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>4</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox>
+      <text>int getCi() const &#123; return ci; &#125;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>void setCi(int _ci) &#123; ci = _ci; &#125;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>std::string getNombres() const &#123; return nombres; &#125;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>void setNombres(std::string _nombres) &#123; nombres = _nombres; &#125;</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>
