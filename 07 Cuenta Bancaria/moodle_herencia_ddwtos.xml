@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Aplicacion de Herencia en Estudiante</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la definición de la clase <b>Estudiante</b> aplicando correctamente la herencia desde <b>Persona</b> (3 espacios para arrastrar):</p>
+        <pre>class [[1]] : [[2]] [[3]] {
+    // ...
+};</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>class Estudiante : public Persona { ... };</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options for [[1]] (class name) -->
+    <dragbox>
+      <text>Estudiante</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Cuenta</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[2]] (access specifier) -->
+    <dragbox>
+      <text>public</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>private</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>protected</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[3]] (base class) -->
+    <dragbox>
+      <text>Persona</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Estudiante</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Cuenta</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

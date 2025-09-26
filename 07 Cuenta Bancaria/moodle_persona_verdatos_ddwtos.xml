@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <name>
+      <text>POO: Método VerDatos()</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la siguiente definición del método <b>VerDatos()</b> de la clase <b>Persona</b> arrastrando la palabra correcta al espacio:</p>
+        <pre>void [[1]]() {
+    cout << "CI: " << [[2]] << "\nNombre Completo: " << [[3]] << endl;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>void VerDatos() { cout << "CI: " << ci << "\nNombre Completo: " << ObtenerNombreCompleto() << endl; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options for [[1]] (function name) -->
+    <dragbox>
+      <text>VerDatos</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>ObtenerNombreCompleto</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>main</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[2]] (attribute) -->
+    <dragbox>
+      <text>ci</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>nombres</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>codigoProcedencia</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[3]] (method call) -->
+    <dragbox>
+      <text>ObtenerNombreCompleto()</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>getCi()</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>cout</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

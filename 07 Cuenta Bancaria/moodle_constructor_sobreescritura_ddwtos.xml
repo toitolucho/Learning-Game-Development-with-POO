@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>SobreEscritura del Constructor por Defecto en Estudiante</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la sobreescritura del constructor por defecto de la clase <b>Estudiante</b>, considerando la herencia de <b>Persona</b> (3 espacios para arrastrar):</p>
+        <pre>[[1]]()
+{
+    [[2]];
+    [[3]];
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>Estudiante()<br>{<br>    ci = 0;<br>    cu = "";<br>}</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options for [[1]] (function name) -->
+    <dragbox>
+      <text>Estudiante</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Cuenta</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>main</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[2]] (assignment) -->
+    <dragbox>
+      <text>ci = 0</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>cu = ""</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>nombres = ""</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>carrera = ""</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[3]] (assignment) -->
+    <dragbox>
+      <text>cu = ""</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>ci = 0</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>carrera = ""</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>apellidos = ""</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>
