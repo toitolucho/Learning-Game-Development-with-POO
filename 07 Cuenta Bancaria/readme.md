@@ -1,4 +1,4 @@
-# Proyecto de Programación Orientada a Objetos  
+# Cuentas Bancarias
 
 Este proyecto define un sistema de clases en **Programación Orientada a Objetos (POO)** que permite modelar personas, estudiantes y cuentas bancarias, aplicando los conceptos de **herencia, composición y encapsulamiento**.  
 
