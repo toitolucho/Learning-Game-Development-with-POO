@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Implementacion del metodo Transferir() en Cuenta (8 blanks)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la implementación del método <b>Transferir()</b> en la clase <b>Cuenta</b> (8 espacios para arrastrar):</p>
+        <pre>bool Transferir(Cuenta &destino, double monto) {
+    if ([[1]].[[2]]([[3]]) && [[4]]([[5]])) {
+        [[6]].[[7]]([[8]]);
+        // mensaje
+        return true;
+    }
+    return false;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>if (propietario.EsCompaneroDe(destino.propietario) && Retirar(monto)) { destino.Depositar(monto); ... }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options: correct and dummy -->
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>EsCompaneroDe</text><group>1</group></dragbox>
+    <dragbox><text>destino.propietario</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>destino</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <!-- Dummies -->
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerRegion</text><group>1</group></dragbox>
+    <dragbox><text>TransferirPromocion</text><group>1</group></dragbox>
+    <dragbox><text>cuentaId</text><group>1</group></dragbox>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerNombreCompleto</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+  </question>
+</quiz>

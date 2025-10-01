@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- Aplicacion de Herencia -->
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Aplicacion de Herencia en Estudiante</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la definición de la clase <b>Estudiante</b> aplicando correctamente la herencia desde <b>Persona</b> (3 espacios para arrastrar):</p>
+        <pre>class [[1]] : [[2]] [[3]] {
+    // ...
+};</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>class Estudiante : public Persona { ... };</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>Cuenta</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>public</text><group>1</group></dragbox>
+    <dragbox><text>private</text><group>1</group></dragbox>
+    <dragbox><text>protected</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>Cuenta</text><group>1</group></dragbox>
+  </question>
+<!-- SobreEscritura del Constructor por Defecto -->
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>SobreEscritura del Constructor por Defecto en Estudiante</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la sobreescritura del constructor por defecto de la clase <b>Estudiante</b>, considerando la herencia de <b>Persona</b> (3 espacios para arrastrar):</p>
+        <pre>[[1]]()
+{
+    [[2]];
+    [[3]];
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>Estudiante()<br>{<br>    ci = 0;<br>    cu = "";<br>}</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>Cuenta</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>ci = 0</text><group>1</group></dragbox>
+    <dragbox><text>cu = ""</text><group>1</group></dragbox>
+    <dragbox><text>nombres = ""</text><group>1</group></dragbox>
+    <dragbox><text>carrera = ""</text><group>1</group></dragbox>
+    <dragbox><text>cu = ""</text><group>1</group></dragbox>
+    <dragbox><text>ci = 0</text><group>1</group></dragbox>
+    <dragbox><text>carrera = ""</text><group>1</group></dragbox>
+    <dragbox><text>apellidos = ""</text><group>1</group></dragbox>
+  </question>
+<!-- SobreEscritura del metodo VerDatos -->
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>SobreEscritura del metodo VerDatos en Estudiante</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la sobreescritura del método <b>VerDatos()</b> en la clase <b>Estudiante</b> (4 espacios para arrastrar):</p>
+        <pre>void [[1]]() {
+    [[2]]::VerDatos();
+    cout << "CU: " << [[3]] << "\nCarrera: " << [[4]] << endl;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>void VerDatos() { Persona::VerDatos(); cout << "CU: " << cu << "\nCarrera: " << carrera << endl; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerNombreCompleto</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>setCarrera</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>Cuenta</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+    <dragbox><text>carrera</text><group>1</group></dragbox>
+    <dragbox><text>ci</text><group>1</group></dragbox>
+    <dragbox><text>codigoProcedencia</text><group>1</group></dragbox>
+    <dragbox><text>carrera</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+    <dragbox><text>nombres</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+  </question>
+<!-- Definicion de los atributos correctamente encapsulados -->
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Definicion de los atributos correctamente encapsulados en Cuenta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la definición de los atributos correctamente encapsulados en la clase <b>Cuenta</b> (4 espacios para arrastrar):</p>
+        <pre>[[1]]:
+    [[2]] [[3]];
+    [[4]] [[5]];
+    [[6]] [[7]];
+    [[8]] [[9]];
+</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta incluye:<br>
+        <b>private:</b><br>
+        <b>int nroCuenta;</b><br>
+        <b>double saldoActual;</b><br>
+        <b>Estudiante propietario;</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox><text>private</text><group>1</group></dragbox>
+    <dragbox><text>public</text><group>1</group></dragbox>
+    <dragbox><text>protected</text><group>1</group></dragbox>
+    <dragbox><text>Cuenta</text><group>1</group></dragbox>
+    <dragbox><text>int</text><group>1</group></dragbox>
+    <dragbox><text>double</text><group>1</group></dragbox>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>string</text><group>1</group></dragbox>
+    <dragbox><text>nroCuenta</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>cuentaId</text><group>1</group></dragbox>
+  </question>
+<!-- Implementacion de los metodos de Deposito y Retiro -->
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Implementacion de los metodos de Deposito y Retiro en Cuenta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la implementación de los métodos <b>Depositar</b> y <b>Retirar</b> en la clase <b>Cuenta</b> (4 espacios para arrastrar):</p>
+        <pre>void [[1]](double monto) {
+    saldoActual += monto;
+}
+bool [[2]](double monto) {
+    if ([[3]] >= monto) {
+        saldoActual -= monto;
+        return true;
+    }
+    return false;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta incluye:<br>
+        <b>void Depositar(double monto) { saldoActual += monto; }</b><br>
+        <b>bool Retirar(double monto) { if (saldoActual >= monto) { saldoActual -= monto; return true; } return false; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>Transferir</text><group>1</group></dragbox>
+    <dragbox><text>Deposito</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>Transferir</text><group>1</group></dragbox>
+    <dragbox><text>Retiro</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>nroCuenta</text><group>1</group></dragbox>
+  </question>
+<!-- Implementacion del metodo Transferir() -->
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Implementacion del metodo Transferir() en Cuenta (8 blanks)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la implementación del método <b>Transferir()</b> en la clase <b>Cuenta</b> (8 espacios para arrastrar):</p>
+        <pre>bool Transferir(Cuenta &destino, double monto) {
+    if ([[1]].[[2]]([[3]]) && [[4]]([[5]])) {
+        [[6]].[[7]]([[8]]);
+        // mensaje
+        return true;
+    }
+    return false;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>if (propietario.EsCompaneroDe(destino.propietario) && Retirar(monto)) { destino.Depositar(monto); ... }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>EsCompaneroDe</text><group>1</group></dragbox>
+    <dragbox><text>destino.propietario</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>destino</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerRegion</text><group>1</group></dragbox>
+    <dragbox><text>TransferirPromocion</text><group>1</group></dragbox>
+    <dragbox><text>cuentaId</text><group>1</group></dragbox>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerNombreCompleto</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+  </question>
+<!-- Implementacion del metodo TransferirPromocion() -->
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Implementacion del metodo TransferirPromocion() en Cuenta (8 blanks)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la implementación del método <b>TransferirPromocion()</b> en la clase <b>Cuenta</b> (8 espacios para arrastrar):</p>
+        <pre>bool TransferirPromocion(Cuenta &destino, double porcentajeIncremento, double monto) {
+    if ([[1]].[[2]]() == destino.propietario.ObtenerRegion() && [[3]]([[4]])) {
+        destino.[[5]]([[6]]);
+        [[7]](saldoActual * porcentajeIncremento / 100.0);
+        destino.[[8]](destino.saldoActual * porcentajeIncremento / 100.0);
+        // mensaje
+        return true;
+    }
+    return false;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>if (propietario.ObtenerRegion() == destino.propietario.ObtenerRegion() && Retirar(monto)) { destino.Depositar(monto); Depositar(...); destino.Depositar(...); ... }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerRegion</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>destino</text><group>1</group></dragbox>
+    <dragbox><text>cuentaId</text><group>1</group></dragbox>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>Transferir</text><group>1</group></dragbox>
+    <dragbox><text>TransferirPromocion</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+  </question>
+</quiz>

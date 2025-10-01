@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- ===================== CLASE PERSONA ===================== -->
+<!-- 1. Declaración de Atributos -->
+  <question type="ddwtos">
+    <category><text>$course$/Persona</text></category>
+    <name><text>Persona 1. Declaración de Atributos (Fácil, 3 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden indicado: <b>tipo</b>, <b>nombre</b>, <b>;</b></p>
+      <pre>[[1]] [[2]][[3]]
+[[4]] [[5]][[6]]
+[[7]] [[8]][[9]]</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>El orden correcto es: int ci; std::string nombres; std::string apellidos;</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>3</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>int</text><group>1</group></dragbox>
+    <dragbox><text>std::string</text><group>1</group></dragbox>
+    <dragbox><text>ci</text><group>1</group></dragbox>
+    <dragbox><text>nombres</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+    <dragbox><text>;</text><group>1</group></dragbox>
+    <dragbox><text>string</text><group>1</group></dragbox>
+    <dragbox><text>codigo</text><group>1</group></dragbox>
+    <dragbox><text>,</text><group>1</group></dragbox>
+  </question>
+<!-- 2. Métodos de acceso y mutación -->
+  <question type="ddwtos">
+    <category><text>$course$/Persona</text></category>
+    <name><text>Persona 2. Métodos de acceso y mutación (Fácil, 3 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>tipo de retorno</b>, <b>nombre de función</b>, <b>parámetros</b></p>
+      <pre>[[1]] [[2]]([[3]]) { return [[4]]; }</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: int getCi() { return ci; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>3</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>int</text><group>1</group></dragbox>
+    <dragbox><text>getCi</text><group>1</group></dragbox>
+    <dragbox><text>void</text><group>1</group></dragbox>
+    <dragbox><text>ci</text><group>1</group></dragbox>
+    <dragbox><text>_ci</text><group>1</group></dragbox>
+    <dragbox><text>setCi</text><group>1</group></dragbox>
+    <dragbox><text>string</text><group>1</group></dragbox>
+    <dragbox><text>nombres</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+  </question>
+<!-- 3. Declaración de 2 constructores -->
+  <question type="ddwtos">
+    <category><text>$course$/Persona</text></category>
+    <name><text>Persona 3. Declaración de 2 constructores (Medio, 4 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>firma</b>, <b>llave de apertura</b>, <b>asignaciones</b>, <b>llave de cierre</b></p>
+      <pre>[[1]]
+[[2]]
+[[3]]
+[[4]]</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto:<br>Persona() { ci = 0; nombres = ""; apellidos = ""; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>4</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>Persona()</text><group>1</group></dragbox>
+    <dragbox><text>{</text><group>1</group></dragbox>
+    <dragbox><text>ci = 0;</text><group>1</group></dragbox>
+    <dragbox><text>nombres = "";</text><group>1</group></dragbox>
+    <dragbox><text>apellidos = "";</text><group>1</group></dragbox>
+    <dragbox><text>}</text><group>1</group></dragbox>
+    <dragbox><text>Persona(int _ci, string _nombres, string _apellidos)</text><group>1</group></dragbox>
+    <dragbox><text>main()</text><group>1</group></dragbox>
+    <dragbox><text>return</text><group>1</group></dragbox>
+  </question>
+<!-- 4. Definición del método ObtenerNombreCompleto -->
+  <question type="ddwtos">
+    <category><text>$course$/Persona</text></category>
+    <name><text>Persona 4. Definición del método ObtenerNombreCompleto (Fácil, 3 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>tipo de retorno</b>, <b>nombre de función</b>, <b>variable</b></p>
+      <pre>[[1]] [[2]]() {
+    return [[3]] + " " + apellidos;
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: string ObtenerNombreCompleto() { return nombres + " " + apellidos; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>3</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>string</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerNombreCompleto</text><group>1</group></dragbox>
+    <dragbox><text>nombres</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+    <dragbox><text>ci</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>std::string</text><group>1</group></dragbox>
+    <dragbox><text>codigoProcedencia</text><group>1</group></dragbox>
+  </question>
+<!-- 5. Definición del método VerDatos -->
+  <question type="ddwtos">
+    <category><text>$course$/Persona</text></category>
+    <name><text>Persona 5. Definición del método VerDatos (Fácil, 3 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>nombre de función</b>, <b>atributo</b>, <b>llamada a método</b></p>
+      <pre>void [[1]]() {
+    cout << "CI: " << [[2]] << "\nNombre Completo: " << [[3]] << endl;
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: void VerDatos() { cout << "CI: " << ci << "\nNombre Completo: " << ObtenerNombreCompleto() << endl; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>3</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>ci</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerNombreCompleto()</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+    <dragbox><text>nombres</text><group>1</group></dragbox>
+    <dragbox><text>setCi</text><group>1</group></dragbox>
+    <dragbox><text>codigoProcedencia</text><group>1</group></dragbox>
+  </question>
+<!-- 6. Definición del método ObtenerProcedencia -->
+  <question type="ddwtos">
+    <category><text>$course$/Persona</text></category>
+    <name><text>Persona 6. Definición del método ObtenerProcedencia (Fácil, 3 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>tipo de retorno</b>, <b>nombre de función</b>, <b>atributo</b></p>
+      <pre>[[1]] [[2]]() {
+    if ([[3]] == "Pt") return "Potosí";
+    // ...
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: string ObtenerProcedencia() { if (codigoProcedencia == "Pt") return "Potosí"; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>3</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>string</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerProcedencia</text><group>1</group></dragbox>
+    <dragbox><text>codigoProcedencia</text><group>1</group></dragbox>
+    <dragbox><text>ci</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>nombres</text><group>1</group></dragbox>
+    <dragbox><text>std::string</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+  </question>
+<!-- ===================== CLASE ESTUDIANTE ===================== -->
+<!-- 7. Aplicación de Herencia -->
+  <question type="ddwtos">
+    <category><text>$course$/Estudiante</text></category>
+    <name><text>Estudiante 1. Aplicación de Herencia (Fácil, 3 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>nombre de clase</b>, <b>acceso</b>, <b>base</b></p>
+      <pre>class [[1]] : [[2]] [[3]] {
+    // ...
+};</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: class Estudiante : public Persona { ... };</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>3</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>public</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>Cuenta</text><group>1</group></dragbox>
+    <dragbox><text>private</text><group>1</group></dragbox>
+    <dragbox><text>protected</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+  </question>
+<!-- 8. SobreEscritura del Constructor por Defecto -->
+  <question type="ddwtos">
+    <category><text>$course$/Estudiante</text></category>
+    <name><text>Estudiante 2. SobreEscritura del Constructor por Defecto (Fácil, 3 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>firma</b>, <b>asignación</b>, <b>asignación</b></p>
+      <pre>[[1]]()
+{
+    [[2]];
+    [[3]];
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: Estudiante() { ci = 0; cu = ""; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>3</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>ci = 0</text><group>1</group></dragbox>
+    <dragbox><text>cu = ""</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>apellidos = ""</text><group>1</group></dragbox>
+    <dragbox><text>carrera = ""</text><group>1</group></dragbox>
+  </question>
+<!-- 9. SobreEscritura del método VerDatos -->
+  <question type="ddwtos">
+    <category><text>$course$/Estudiante</text></category>
+    <name><text>Estudiante 3. SobreEscritura del método VerDatos (Medio, 4 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>nombre de función</b>, <b>base</b>, <b>atributo</b>, <b>atributo</b></p>
+      <pre>void [[1]]() {
+    [[2]]::VerDatos();
+    cout << "CU: " << [[3]] << "\nCarrera: " << [[4]] << endl;
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: void VerDatos() { Persona::VerDatos(); cout << "CU: " << cu << "\nCarrera: " << carrera << endl; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>4</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+    <dragbox><text>carrera</text><group>1</group></dragbox>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>Cuenta</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+    <dragbox><text>ci</text><group>1</group></dragbox>
+  </question>
+<!-- ===================== CLASE CUENTA ===================== -->
+<!-- 10. Atributos correctamente encapsulados -->
+  <question type="ddwtos">
+    <category><text>$course$/Cuenta</text></category>
+    <name><text>Cuenta 1. Atributos correctamente encapsulados (Medio, 4 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>acceso</b>, <b>tipo</b>, <b>nombre</b>, <b>;</b></p>
+      <pre>[[1]]:
+    [[2]] [[3]];
+    [[4]] [[5]];
+    [[6]] [[7]];
+    [[8]] [[9]];
+</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: private: int nroCuenta; double saldoActual; Estudiante propietario;</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>4</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>private</text><group>1</group></dragbox>
+    <dragbox><text>int</text><group>1</group></dragbox>
+    <dragbox><text>nroCuenta</text><group>1</group></dragbox>
+    <dragbox><text>double</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>Estudiante</text><group>1</group></dragbox>
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>;</text><group>1</group></dragbox>
+    <dragbox><text>public</text><group>1</group></dragbox>
+    <dragbox><text>string</text><group>1</group></dragbox>
+    <dragbox><text>cuentaId</text><group>1</group></dragbox>
+  </question>
+<!-- 11. Métodos de Deposito y Retiro -->
+  <question type="ddwtos">
+    <category><text>$course$/Cuenta</text></category>
+    <name><text>Cuenta 2. Métodos de Deposito y Retiro (Medio, 4 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden: <b>nombre de función</b>, <b>atributo</b>, <b>nombre de función</b>, <b>atributo</b></p>
+      <pre>void [[1]](double monto) {
+    [[2]] += monto;
+}
+bool [[3]](double monto) {
+    if (monto <= [[4]]) {
+        [[4]] -= monto;
+        return true;
+    }
+    return false;
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: void Depositar(double monto) { saldoActual += monto; } bool Retirar(double monto) { if (monto <= saldoActual) { saldoActual -= monto; return true; } return false; }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>4</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>Transferir</text><group>1</group></dragbox>
+    <dragbox><text>Retiro</text><group>1</group></dragbox>
+    <dragbox><text>Deposito</text><group>1</group></dragbox>
+    <dragbox><text>nroCuenta</text><group>1</group></dragbox>
+  </question>
+<!-- 12. Método Transferir (Complejo, 8 blanks, comentarios) -->
+  <question type="ddwtos">
+    <category><text>$course$/Cuenta</text></category>
+    <name><text>Cuenta 3. Método Transferir (Complejo, 15 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden indicado y lea los comentarios para cada línea:</p>
+      <pre>bool Transferir(Cuenta &destino, double monto) {
+    // Verifica si son compañeros y hay saldo
+    if ([[1]].[[2]]([[3]]) && [[4]]([[5]])) {
+        // Realiza el depósito
+        [[6]].[[7]]([[8]]);
+        // Imprime mensaje
+        // ...
+        return true;
+    }
+    return false;
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: if (propietario.EsCompaneroDe(destino.propietario) && Retirar(monto)) { destino.Depositar(monto); ... }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>15</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>EsCompaneroDe</text><group>1</group></dragbox>
+    <dragbox><text>destino.propietario</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>destino</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerRegion</text><group>1</group></dragbox>
+    <dragbox><text>TransferirPromocion</text><group>1</group></dragbox>
+    <dragbox><text>cuentaId</text><group>1</group></dragbox>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerNombreCompleto</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+  </question>
+<!-- 13. Método TransferirPromocion (Complejo, 8 blanks, comentarios) -->
+  <question type="ddwtos">
+    <category><text>$course$/Cuenta</text></category>
+    <name><text>Cuenta 4. Método TransferirPromocion (Complejo, 15 pts)</text></name>
+    <questiontext format="html"><text><![CDATA[
+      <p>Arrastre y suelte en el orden indicado y lea los comentarios para cada línea:</p>
+      <pre>bool TransferirPromocion(Cuenta &destino, double porcentajeIncremento, double monto) {
+    // Verifica región y saldo
+    if ([[1]].[[2]]() == destino.propietario.ObtenerRegion() && [[3]]([[4]])) {
+        // Realiza el depósito
+        destino.[[5]]([[6]]);
+        // Incrementa saldo por promoción
+        [[7]](saldoActual * porcentajeIncremento / 100.0);
+        destino.[[8]](destino.saldoActual * porcentajeIncremento / 100.0);
+        // Imprime mensaje
+        // ...
+        return true;
+    }
+    return false;
+}</pre>
+    ]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[
+      <p>Ejemplo correcto: if (propietario.ObtenerRegion() == destino.propietario.ObtenerRegion() && Retirar(monto)) { destino.Depositar(monto); Depositar(...); destino.Depositar(...); ... }</p>
+    ]]></text></generalfeedback>
+    <defaultgrade>15</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden><shuffleanswers>1</shuffleanswers>
+    <dragbox><text>propietario</text><group>1</group></dragbox>
+    <dragbox><text>ObtenerRegion</text><group>1</group></dragbox>
+    <dragbox><text>Retirar</text><group>1</group></dragbox>
+    <dragbox><text>monto</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>saldoActual</text><group>1</group></dragbox>
+    <dragbox><text>Depositar</text><group>1</group></dragbox>
+    <dragbox><text>destino</text><group>1</group></dragbox>
+    <dragbox><text>cuentaId</text><group>1</group></dragbox>
+    <dragbox><text>VerDatos</text><group>1</group></dragbox>
+    <dragbox><text>Transferir</text><group>1</group></dragbox>
+    <dragbox><text>TransferirPromocion</text><group>1</group></dragbox>
+    <dragbox><text>Persona</text><group>1</group></dragbox>
+    <dragbox><text>apellidos</text><group>1</group></dragbox>
+    <dragbox><text>cu</text><group>1</group></dragbox>
+    <dragbox><text>main</text><group>1</group></dragbox>
+  </question>
+</quiz>

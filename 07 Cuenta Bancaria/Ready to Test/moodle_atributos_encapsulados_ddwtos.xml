@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Definicion de los atributos correctamente encapsulados en Cuenta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la definición de los atributos correctamente encapsulados en la clase <b>Cuenta</b> (4 espacios para arrastrar):</p>
+        <pre>[[1]]:
+    [[2]] [[3]];
+    [[4]] [[5]];
+    [[6]] [[7]];
+    [[8]] [[9]];
+</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta incluye:<br>
+        <b>private:</b><br>
+        <b>int nroCuenta;</b><br>
+        <b>double saldoActual;</b><br>
+        <b>Estudiante propietario;</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options for [[1]] (access specifier) -->
+    <dragbox>
+      <text>private</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>public</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>protected</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Cuenta</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[2]], [[4]], [[6]], [[8]] (types) -->
+    <dragbox>
+      <text>int</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>double</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Estudiante</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>string</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[3]], [[5]], [[7]], [[9]] (names) -->
+    <dragbox>
+      <text>nroCuenta</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>saldoActual</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>propietario</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>cuentaId</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

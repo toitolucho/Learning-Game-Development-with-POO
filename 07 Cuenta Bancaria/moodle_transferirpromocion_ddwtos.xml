@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>Implementacion del metodo TransferirPromocion() en Cuenta</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la implementación del método <b>TransferirPromocion()</b> en la clase <b>Cuenta</b> (4 espacios para arrastrar):</p>
+        <pre>bool [[1]](Cuenta &destino, double porcentajeIncremento, double monto) {
+    if ([[2]].[[3]]() == destino.propietario.ObtenerRegion() && Retirar(monto)) {
+        destino.[[4]](monto);
+        Depositar(saldoActual * porcentajeIncremento / 100.0);
+        destino.Depositar(destino.saldoActual * porcentajeIncremento / 100.0);
+        // ...
+        return true;
+    }
+    return false;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta incluye:<br>
+        <b>bool TransferirPromocion(Cuenta &destino, double porcentajeIncremento, double monto) { if (propietario.ObtenerRegion() == destino.propietario.ObtenerRegion() && Retirar(monto)) { destino.Depositar(monto); ... return true; } return false; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options for [[1]] (function name) -->
+    <dragbox>
+      <text>TransferirPromocion</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Transferir</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Depositar</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Retirar</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[2]] (propietario) -->
+    <dragbox>
+      <text>propietario</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>destino</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>saldoActual</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>nroCuenta</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[3]] (ObtenerRegion) -->
+    <dragbox>
+      <text>ObtenerRegion</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>EsCompaneroDe</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>VerDatos</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>ObtenerNombreCompleto</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[4]] (Depositar) -->
+    <dragbox>
+      <text>Depositar</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Retirar</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Transferir</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>VerDatos</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

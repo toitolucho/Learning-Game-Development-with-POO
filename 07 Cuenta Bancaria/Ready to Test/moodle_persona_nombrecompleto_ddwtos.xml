@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <name>
+      <text>POO: Método ObtenerNombreCompleto()</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la siguiente definición del método <b>ObtenerNombreCompleto()</b> de la clase <b>Persona</b> arrastrando la palabra correcta al espacio:</p>
+        <pre>[[1]] [[2]]() {
+    return [[3]] + " " + apellidos;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>return nombres + " " + apellidos;</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options for [[1]] (return type) -->
+    <dragbox>
+      <text>string</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>std::string</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>STRING</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>int</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>void</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>double</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[2]] (function name) -->
+    <dragbox>
+      <text>ObtenerNombreCompleto</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>getNombreCompleto</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>nombreCompleto</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>main</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>setNombre</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[3]] (variable in return) -->
+    <dragbox>
+      <text>nombres</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>this->nombres</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Persona::nombres</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>apellidos</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>ci</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>codigoProcedencia</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

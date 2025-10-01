@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="ddwtos">
+    <category>
+      <text>$course$/POO_Parcial1_Cuenta</text>
+    </category>
+    <name>
+      <text>SobreEscritura del metodo VerDatos en Estudiante</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[
+        <p>Complete la sobreescritura del método <b>VerDatos()</b> en la clase <b>Estudiante</b> (4 espacios para arrastrar):</p>
+        <pre>void [[1]]() {
+    [[2]]::VerDatos();
+    cout << "CU: " << [[3]] << "\nCarrera: " << [[4]] << endl;
+}</pre>
+        <p><strong>Opciones:</strong></p>
+      ]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[
+        <p>La respuesta correcta es:<br>
+        <b>void VerDatos() { Persona::VerDatos(); cout << "CU: " << cu << "\nCarrera: " << carrera << endl; }</b>
+        </p>
+      ]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <!-- Drag options for [[1]] (function name) -->
+    <dragbox>
+      <text>VerDatos</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>ObtenerNombreCompleto</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>main</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>setCarrera</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[2]] (base class) -->
+    <dragbox>
+      <text>Persona</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Estudiante</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>Cuenta</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>main</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[3]] (CU attribute) -->
+    <dragbox>
+      <text>cu</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>carrera</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>ci</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>codigoProcedencia</text>
+      <group>1</group>
+    </dragbox>
+    <!-- Drag options for [[4]] (Carrera attribute) -->
+    <dragbox>
+      <text>carrera</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>cu</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>nombres</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>apellidos</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+</quiz>

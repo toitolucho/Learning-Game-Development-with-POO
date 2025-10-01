@@ -41,7 +41,7 @@ public:
         return nombres + " " + apellidos;
     }
     void VerDatos() {
-        cout << "CI: " << ci << "\nNombre Completo: " << ObtenerNombreCompleto() << "\nProcedencia: " << ObtenerProcedencia() << endl;
+        cout<<"CI: "<<ci<<"\nNombre Completo: "<<ObtenerNombreCompleto()<<"\nProcedencia: "<<ObtenerProcedencia()<<endl;
     }
     string ObtenerProcedencia() {
         if (codigoProcedencia == "Pt") return "Potosí";
@@ -101,7 +101,7 @@ public:
     void setCarrera(string _carrera) { carrera = _carrera; }
     void VerDatos() {
         Persona::VerDatos();
-        cout << "CU: " << cu << "\nCarrera: " << carrera << endl;
+        cout<<"CU: "<<cu<<"\nCarrera: "<<carrera<<endl;
     }
     bool EsCompaneroDe(const Estudiante& otro) {
         return carrera == otro.carrera;
@@ -136,9 +136,9 @@ public:
     bool Transferir(Cuenta &destino, double monto) {
         if (propietario.EsCompaneroDe(destino.propietario) && Retirar(monto)) {
             destino.Depositar(monto);
-            cout << fixed << setprecision(2);
-            cout << "Se transfirió " << monto << " de la cuenta de: " << propietario.ObtenerNombreCompleto()
-                 << " a la cuenta de: " << destino.propietario.ObtenerNombreCompleto() << endl;
+            cout<<fixed<<setprecision(2);
+            cout<<"Se transfirió "<<monto<<" de la cuenta de: "<<propietario.ObtenerNombreCompleto()
+                <<" a la cuenta de: "<<destino.propietario.ObtenerNombreCompleto()<<endl;
             return true;
         }
         return false;
@@ -149,15 +149,15 @@ public:
             // Incrementar ambos saldos por el porcentaje
             Depositar(saldoActual * porcentajeIncremento / 100.0);
             destino.Depositar(destino.saldoActual * porcentajeIncremento / 100.0);
-            cout << fixed << setprecision(2);
-            cout << "Se transfirió (promoción) " << monto << " de la cuenta de: " << propietario.ObtenerNombreCompleto()
-                 << " a la cuenta de: " << destino.propietario.ObtenerNombreCompleto() << endl;
+            cout<<fixed<<setprecision(2);
+            cout<<"Se transfirió (promoción) "<<monto<<" de la cuenta de: "<<propietario.ObtenerNombreCompleto()
+                <<" a la cuenta de: "<<destino.propietario.ObtenerNombreCompleto()<<endl;
             return true;
         }
         return false;
     }
     void VerDatos() {
-        cout << "Nro Cuenta: " << nroCuenta << "\nSaldo Actual: " << saldoActual << endl;
+        cout<<"Nro Cuenta: "<<nroCuenta<<"\nSaldo Actual: "<<saldoActual<<endl;
         propietario.VerDatos();
     }
 };
