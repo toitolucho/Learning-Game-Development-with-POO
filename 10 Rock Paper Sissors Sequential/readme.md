@@ -52,6 +52,9 @@ Para una implementación exitosa, el estudiante deberá seguir los siguientes pa
 ```text
 Introduzca la opcion del jugador 1: 1
 Introduzca la opcion del jugador 2: 3
+```
 **Salida:**
+```text
 ()  VS  8<
 GANO EL JUGADOR 1
+```
