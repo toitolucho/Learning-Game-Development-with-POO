@@ -58,3 +58,57 @@ Introduzca la opcion del jugador 2: 3
 ()  VS  8<
 GANO EL JUGADOR 1
 ```
+
+## 5. Matriz de Casos de Prueba
+Para asegurar el correcto funcionamiento del algoritmo, el estudiante debe validar cada combinación posible. A continuación, se presenta una tabla parcial que sirve como guía para la documentación técnica:
+
+| OP. J1 | OP. J2 | Representación | Resultado Esperado |
+| :---: | :---: | :---: | :--- |
+| 1 | 1 | `()` VS `()` | EMPATE |
+| 1 | 3 | `()` VS `8<` | GANO EL JUGADOR 1 |
+| 3 | 2 | `8<` VS `[]` | GANO EL JUGADOR 1 |
+| 2 | 2 | `[]` VS `[]` | EMPATE |
+| 1 | 2 | `()` VS `[]` | *Completar por el estudiante* |
+| 2 | 1 | `[]` VS `()` | *Completar por el estudiante* |
+| 2 | 3 | `[]` VS `8<` | *Completar por el estudiante* |
+| 3 | 1 | `8<` VS `()` | *Completar por el estudiante* |
+| 3 | 3 | `8<` VS `8<` | EMPATE |
+
+---
+
+## 6. Pseudocódigo del Algoritmo
+El estudiante deberá basar su implementación en C++ siguiendo la lógica del siguiente pseudocódigo estructurado:
+
+```text
+ALGORITMO PiedraPapelTijera
+    VARIABLES:
+        ENTERO j1, j2
+        CADENA simJ1, simJ2
+
+    INICIO
+        ESCRIBIR "Introduzca la opcion del jugador 1"
+        LEER j1
+        ESCRIBIR "Introduzca la opcion del jugador 2"
+        LEER j2
+
+        // Fase de asignación de símbolos
+        SI j1 == 1 ENTONCES simJ1 <- "()"
+        SINO SI j1 == 2 ENTONCES simJ1 <- "[]"
+        SINO simJ1 <- "8<"
+
+        SI j2 == 1 ENTONCES simJ2 <- "()"
+        SINO SI j2 == 2 ENTONCES simJ2 <- "[]"
+        SINO simJ2 <- "8<"
+
+        // Fase de salida visual
+        ESCRIBIR simJ1, " VS ", simJ2
+
+        // Fase de evaluación lógica
+        SI j1 == j2 ENTONCES
+            ESCRIBIR "EMPATE"
+        SINO SI (j1 == 1 Y j2 == 3) O (j1 == 2 Y j2 == 1) O (j1 == 3 Y j2 == 2) ENTONCES
+            ESCRIBIR "GANO EL JUGADOR 1"
+        SINO
+            ESCRIBIR "GANO EL JUGADOR 2"
+        FIN SI
+    FIN
