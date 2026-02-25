@@ -59,3 +59,32 @@ El estudiante debe utilizar los siguientes casos para verificar que su logica e 
 15 8 1995
 31 4 2020
 31 12 2099
+```
+
+**Entrada:**
+```text
+Salto temporal completado
+Falla catastrofica: Fecha inexistente
+Salto temporal completado
+Saltos exitosos: 2 / 3
+```
+
+### Caso de Prueba 2: Validacion de Anos Bisiestos
+
+**Entrada:**
+```text
+4
+29 2 2024
+29 2 2023
+28 2 2023
+29 2 1900
+```
+
+**Entrada:**
+```text
+Salto temporal completado
+Falla catastrofica: Fecha inexistente
+Salto temporal completado
+Falla catastrofica: Fecha inexistente
+Saltos exitosos: 2 / 4
+```
