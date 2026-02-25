@@ -16,10 +16,10 @@ El jugador lanzará 3 dados (valores del 1 al 6) ordenados de menor a mayor ($d_
 Debes implementar las siguientes funciones:
 
 ### 1. `bool EsTrio(int d1, int d2, int d3)`
-Evalúa si los tres dados tienen el mismo valor.
+Evalúa si los tres dados tienen el mismo valor y devuelve el resultado como verdad o falso.
 
 ### 2. `bool EsEscalera(int d1, int d2, int d3)`
-Evalúa si los tres dados son números consecutivos.
+Evalúa si los tres dados son números consecutivos y devuelve el resultado como verdad o falso.
 
 ### 3. `int CalcularPuntaje(int d1, int d2, int d3)`
 Determina el puntaje de la ronda. **Debe llamar** a `EsTrio()` y `EsEscalera()`. Retorna el puntaje de esa jugada específica.
