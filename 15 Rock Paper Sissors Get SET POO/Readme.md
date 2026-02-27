@@ -24,6 +24,7 @@ La clase debe presentar la siguiente estructura de visibilidad:
 ###  Diagrama de Clase (UML)
 
 Para comprender la estructura del objeto y su visibilidad (encapsulamiento), se presenta el siguiente diagrama basado en el estándar UML:
+Los metodos de acceso se los incorpor como parte de los metodos solo con fines educativos, en futuras oportunidades, se asumiran que estos deben ser implementados en el codigo, sin necesidad de definirlos como tal en el diagrama de clases
 
 ```mermaid
 classDiagram
