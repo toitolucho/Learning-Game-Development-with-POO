@@ -21,6 +21,19 @@ La clase debe presentar la siguiente estructura de visibilidad:
 
 ---
 
+###  Diagrama de Clase (UML)
+
+Para comprender la estructura del objeto y su visibilidad (encapsulamiento), se presenta el siguiente diagrama basado en el estándar UML:
+
+```mermaid
+classDiagram
+    class Jugador {
+        - short jugada
+        + int puntaje
+        + getJugada() short
+        + setJugada(short newJugada) void
+    }
+```
 ## Pautas de Implementación
 
 Para completar el programa de forma correcta, el estudiante debe seguir estas pautas secuenciales:
