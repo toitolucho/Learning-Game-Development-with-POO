@@ -11,8 +11,8 @@ Implementación de un script en el motor gráfico (Unity o Unreal Engine) para s
 ## Material de Apoyo
 Consulte los siguientes recursos en video para revisar los conceptos necesarios para esta implementación
 
- Parte 1 [Insertar Título del Video 1](URL_DEL_VIDEO_1_AQUI)
- Parte 2 [Insertar Título del Video 2](URL_DEL_VIDEO_2_AQUI)
+ Parte 1 [Configuracion incial en Unity](https://youtu.be/KBv8oQi1np0?si=YZ_lZRbBlGtyK_oz)
+ Parte 2 [Configuracion de un primer script](https://youtu.be/SoPSGg5LwYs?si=VbL7zVGOHrrRcSp8)
 
 ## Especificaciones Técnicas
 
