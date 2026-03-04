@@ -6,7 +6,7 @@ Implementación de un script en el motor gráfico (Unity o Unreal Engine) para s
 ## Resultado Esperado
 (Reemplace el siguiente enlace con la URL de su imagen de referencia)
 
-![Imagen de Referencia del Resultado Esperado](URL_DE_LA_IMAGEN_AQUI)
+![Imagen de Referencia del Resultado Esperado](sample.png)
 
 ## Material de Apoyo
 Consulte los siguientes recursos en video para revisar los conceptos necesarios para esta implementación
