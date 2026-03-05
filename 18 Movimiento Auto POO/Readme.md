@@ -153,12 +153,32 @@ void Move()
 
 ```
 
-## 4. Requisitos de los Assets Visuales
+## 4. Requisitos de los Assets Visuales y Orientación
 
-Para que el sistema de inversión (Flipping) funcione correctamente sin necesidad de código adicional, los sprites importados deben cumplir con la siguiente orientación inicial:
+Para que el sistema de inversión (Flipping) funcione correctamente mediante código, los archivos de imagen importados a Unity deben cumplir con una orientación inicial específica. Esto evita la necesidad de crear cuatro animaciones distintas, optimizando el uso de memoria del proyecto.
 
-* **Sprite Horizontal**: La imagen original debe mirar hacia la **derecha**. El script invertirá automáticamente la imagen en el eje X cuando se seleccione la dirección *West*.
-* **Sprite Vertical**: La imagen original debe mirar hacia **arriba**. El script invertirá la imagen en el eje Y cuando se seleccione la dirección *South*.
+### Orientación de los Archivos Originales
+
+* **Sprite Horizontal**: La imagen original debe estar mirando hacia la **derecha (East)**. El script activará la propiedad `flipX` automáticamente cuando se seleccione la dirección *West*.
+* **Sprite Vertical**: La imagen original debe estar mirando hacia **arriba (North)**. El script activará la propiedad `flipY` cuando se seleccione la dirección *South*.
+
+### Referencia Visual de los Assets
+
+A continuación, se muestran los sprites base que debe utilizar para configurar el componente en el Inspector:
+
+**Imagen para movimiento lateral (horizontal.png):**
+![Sprite Horizontal](horizontal.png)
+
+**Imagen para movimiento vertical (vertical.png):**
+![Sprite Vertical](vertical.png)
+
+
+
+### Configuración en el Inspector
+1. Seleccione su GameObject en la jerarquía.
+2. En el componente `PlayerController`, arrastre el archivo `horizontal.png` al campo **Horizontal Sprite**.
+3. Arrastre el archivo `vertical.png` al campo **Vertical Sprite**.
+4. Asegúrese de que el "Mesh Type" del Sprite en Unity esté configurado como "Full Rect" o que el "Pivot" esté centrado para evitar desplazamientos visuales al realizar el flip.
 
 
 
