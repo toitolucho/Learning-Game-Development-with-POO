@@ -153,3 +153,13 @@ void Move()
 
 ```
 
+## 4. Requisitos de los Assets Visuales
+
+Para que el sistema de inversión (Flipping) funcione correctamente sin necesidad de código adicional, los sprites importados deben cumplir con la siguiente orientación inicial:
+
+* **Sprite Horizontal**: La imagen original debe mirar hacia la **derecha**. El script invertirá automáticamente la imagen en el eje X cuando se seleccione la dirección *West*.
+* **Sprite Vertical**: La imagen original debe mirar hacia **arriba**. El script invertirá la imagen en el eje Y cuando se seleccione la dirección *South*.
+
+
+
+**Nota:** Asegúrese de que el "Pivot" de sus sprites esté centrado para que la inversión no desplace al personaje fuera de su posición original.
