@@ -166,10 +166,8 @@ Para que el sistema de inversión (Flipping) funcione correctamente mediante có
 
 A continuación, se muestran los sprites base que debe utilizar para configurar el componente en el Inspector:
 
-**Imagen para movimiento lateral (horizontal.png):**
 ![Sprite Horizontal](horizontal.png)
 
-**Imagen para movimiento vertical (vertical.png):**
 ![Sprite Vertical](vertical.png)
 
 
