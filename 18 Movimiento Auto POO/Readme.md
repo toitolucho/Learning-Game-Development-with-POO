@@ -170,6 +170,7 @@ A continuación, se muestran los sprites base que debe utilizar para configurar 
 
 ![Sprite Vertical](vertical.png)
 
+![Sugerencia de Pista](pista.png)
 
 
 ### Configuración en el Inspector
