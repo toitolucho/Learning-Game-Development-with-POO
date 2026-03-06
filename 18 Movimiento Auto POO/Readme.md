@@ -25,7 +25,7 @@ El script `PlayerController.cs` se encarga de tres tareas fundamentales:
 ## Instrucciones para el Estudiante
 1.  **Asigna** el script a un GameObject que tenga un componente `SpriteRenderer`.
 2.  **Configura** los sprites en las ranuras correspondientes del Inspector (arrastra y suelta tus imágenes).
-3.  **Crea Variaciones:** Crea tres GameObjects distintos en tu escena (por ejemplo: un "Tanque" lento y un "Fantasma" muy rápido). 
+3.  **Crea Variaciones:** Crea 4 GameObjects distintos en tu escena (por ejemplo: un "Tanque" lento y un "Fantasma" muy rápido). 
     * Configura cada uno con diferentes velocidades y sprites para comprobar la versatilidad del script.
 
 ## Criterios de Evaluación
@@ -164,7 +164,7 @@ Para que el sistema de inversión (Flipping) funcione correctamente mediante có
 
 ### Referencia Visual de los Assets
 
-A continuación, se muestran los sprites base que debe utilizar para configurar el componente en el Inspector:
+A continuación, se muestran los sprites base que puede utilizar para configurar el componente en el Inspector, como ejemplo se sugiere crear una pista de carrera, y adicionalmente otra escena donde pueda utilizar el mismo script bajo otro contexto, se deja su imaginacion.
 
 ![Sprite Horizontal](horizontal.png)
 
