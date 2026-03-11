@@ -88,4 +88,4 @@ NOTIFICACION DEL SISTEMA:
 
 ESTADO FINAL:
 1. Cuenta 001 | Titular: Juan Perez | Saldo Actual: $550.00
-2. Cuenta 002 | Titular: Maria Lopez | Saldo Actual: $450.00
+2. Cuenta 002 | Titular: Maria Lopez | Saldo Actual: $450.00  
